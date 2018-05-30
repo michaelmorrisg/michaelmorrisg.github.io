@@ -8,18 +8,34 @@
     <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="./Resources/CSS/images/favicon (3).ico" type="image/x-icon">
     <link rel="icon" href="./Resources/CSS/images/favicon (3).ico" type="image/x-icon">
-    <script type="text/javascript">
-!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-
-pintrk('load','2617355989593' , {
-  em: '<email_address>' ,
-});
-pintrk('page');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt=""
-src="https://ct.pinterest.com/v3/?tid=2617355989593&noscript=1" />
-</noscript>
+    <!-- Pinterest Tag -->
+<script>
+  !function(e){if(!window.pintrk){window.pintrk = function () {
+  window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+        n=window.pintrk;n.queue=[],n.version="3.0";var
+        t=document.createElement("script");t.async=!0,t.src=e;var
+        r=document.getElementsByTagName("script")[0];
+        r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+  pintrk('load', '2617355989593', {em: '<user_email_address>'});
+  pintrk('page');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt=""
+        src="https://ct.pinterest.com/v3/?tid=2617355989593&pd[em]=<hashed_email_address>&noscript=1" />
+  </noscript>
+  <!-- end Pinterest Tag -->
+  <script>
+    pintrk('track', 'checkout', {
+    value: 100,
+    order_quantity: 1,
+    currency: 'USD'
+    });
+    </script>
+    <script>
+      pintrk('track', 'addtocart');
+    </script>
+      
+  
   </head>
   <body>
     <div id="main-banner">
@@ -30,6 +46,7 @@ src="https://ct.pinterest.com/v3/?tid=2617355989593&noscript=1" />
         <li class="nav-bar"><a href="" >About Me</a></li>
         <li class="nav-bar"><a href="" >Online</a></li>
         <li class="nav-bar"><a href="" >Contact</a></li>
+        <li class="nav-bar"><a href="./cart.html" >Add to Cart</a></li>
       </ul>
     </nav>
     <div id="sub-banner">
@@ -37,7 +54,7 @@ src="https://ct.pinterest.com/v3/?tid=2617355989593&noscript=1" />
         <img src="./Resources/CSS/images/OneGoodMicCropped.png"/>
       </div>
       <div id="sub-banner-text">
-        <p>Click on the images below for examples of my work</p>
+        <!--<p>Click on the images below for examples of my work</p>-->
       </div>
     </div>
   <div class="row">

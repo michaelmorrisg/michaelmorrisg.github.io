@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <!-- Pinterest Tag -->
+<script>
+    !function(e){if(!window.pintrk){window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+          n=window.pintrk;n.queue=[],n.version="3.0";var
+          t=document.createElement("script");t.async=!0,t.src=e;var
+          r=document.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    pintrk('load', '2617355989593', {em: '<user_email_address>'});
+    pintrk('page');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+          src="https://ct.pinterest.com/v3/?tid=2617355989593&pd[em]=<hashed_email_address>&noscript=1" />
+    </noscript>
+    <!-- end Pinterest Tag -->
+    <script>
+        pintrk('track', 'checkout', {
+        value: 100,
+        order_quantity: 1,
+        currency: 'USD'
+        });
+    </script>
+    <script>
+        pintrk('track', 'addtocart');
+    </script>          
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-bar"><a href="./index.html">Home</a></li>
+            <li class="nav-bar"><a href="" >About Me</a></li>
+            <li class="nav-bar"><a href="" >Online</a></li>
+            <li class="nav-bar"><a href="" >Contact</a></li>
+            <li class="nav-bar"><a href="./cart.html" >Add to Cart</a></li>
+        </ul>
+    </nav>
+    <h1>What a great cart!</h1>
+</body>
+</html>
